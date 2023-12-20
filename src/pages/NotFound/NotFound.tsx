@@ -1,0 +1,1 @@
+export const NotFound = () => <span>Error 404</span>

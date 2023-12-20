@@ -1,0 +1,10 @@
+.text_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bullet {
+  margin-left: 4rem;
+  text-decoration:wavy
+}

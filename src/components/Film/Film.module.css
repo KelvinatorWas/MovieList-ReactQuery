@@ -1,0 +1,109 @@
+
+@keyframes move-up-down-scale {
+    35% {
+      transform: translateY(-5px) rotateZ(-60deg);
+    }
+    75% {
+      transform: scale(1.5) translateY(5px) rotateZ(60deg);
+    }
+    100% {
+    }
+  }
+
+.film_container {
+    display: flex;
+    max-width: 640px;
+    height:246px;
+    max-height:246px;
+    transition: transform 0.4s;
+    z-index: 1;
+
+
+    background-color: rgba(128, 128, 128, 0.392);
+    padding: 1rem;
+    border-radius: 5px;
+    
+    &:hover {
+        z-index: 2;
+        background-color: rgba(108, 108, 108, 1);
+        box-shadow: 10px 20px 10px rgb(0, 0, 0);
+        transform: scale(1.3);
+    }
+
+    .film_data {
+        display: flex;
+        padding-left: 1rem;
+        flex-direction: column;
+    }
+
+    .film_desc {
+        font-size: small;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+}
+
+
+.film_title {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 0;
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(251, 251, 251, 0.518);
+    }
+}
+.release {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 0;
+    color: gray;
+}
+
+.film_info {
+    display: flex;
+    font-size: x-small;
+    flex-direction: row;
+    font-weight: bold;
+    
+    p {
+        padding: 0 4px;
+    }
+}
+
+.film_rating {
+    display: flex;
+    font-size: small;
+    flex-direction: row;
+    font-weight: bold;
+    align-items: center;
+    column-gap: 8px;
+
+    .star {
+        width: 16px;
+        height: 16px;
+        fill:gold;
+    }
+}
+
+
+.film_poster {
+    min-height:13.4rem;
+    min-width: 8.6rem;
+    border-radius: 5px;
+}
+
+
+.delete_film {
+    cursor: pointer;
+    
+    &:hover {
+      fill:red;
+      transform-origin: center;
+      animation-name: move-up-down-scale;
+      animation-duration: 1s;
+    }
+  }

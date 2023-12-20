@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20, 16, 20);
+    font-family: 'Barlow';
+  }
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0 10rem;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+
+    &:hover {
+        opacity: 0.8;
+        text-shadow: rgb(0, 174, 255) 1px 0 10px;
+    }
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
