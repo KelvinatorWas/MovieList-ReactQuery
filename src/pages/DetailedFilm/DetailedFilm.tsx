@@ -10,7 +10,7 @@ const DetailedFilm = () => {
   const location = useLocation();
   const filmId = location.state?.filmId;
 
-  if (!filmId) return <span>Something Went Wrong</span>
+  if (!filmId) return <span>Error 404</span>
 
   const {data:film, isLoading, error} = useQuery(
     {
